@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .factura-titulo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .info-section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .info-section h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .totales {
+            float: right;
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .totales .total-row {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .totales .total-row strong {
+            font-weight: bold;
+        }
+        .footer {
+            clear: both;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .cuotas-section {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="factura-titulo">FACTURA ELECTRÓNICA</div>
+        <div>F001-00000001</div>
+    </div>
+
+    <div class="info-section">
+        <h3>DATOS DEL EMISOR</h3>
+        <p><strong>Razón Social:</strong> AFAMA SAC</p>
+        <p><strong>RUC:</strong> 20123456789</p>
+        <p><strong>Dirección:</strong> VIRTUAL</p>
+    </div>
+
+    <div class="info-section">
+        <h3>DATOS DEL CLIENTE</h3>
+        <p><strong>Razón Social:</strong> Inti SAC</p>
+        <p><strong>RUC:</strong> 20125632563</p>
+        <p><strong>Dirección:</strong> Av. Los Dioses N°2</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>DESCRIPCIÓN</th>
+                <th>CANT.</th>
+                <th>P.UNIT</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>comida de gato</td>
+                <td>1</td>
+                <td>S/ 10.00</td>
+                <td>S/ 10.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>5 caras3</td>
+                <td>1</td>
+                <td>S/ 14.00</td>
+                <td>S/ 14.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="totales">
+        <div class="total-row">
+            <strong>Op. Gravadas:</strong> <span>S/ 20.33</span>
+        </div>
+        <div class="total-row">
+            <strong>Op. Exoneradas:</strong> <span>S/ 0.00</span>
+        </div>
+        <div class="total-row">
+            <strong>Op. Inafectas:</strong> <span>S/ 0.00</span>
+        </div>
+        <div class="total-row">
+            <strong>IGV:</strong> <span>S/ 3.67</span>
+        </div>
+        <div class="total-row">
+            <strong>Total:</strong> <span>S/ 24.00</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <strong>Son:</strong> VEINTICUATRO  CON 00/100 SOLES
+    </div>
+</body>
+</html>

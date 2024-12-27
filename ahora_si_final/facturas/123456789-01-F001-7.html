@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .factura-titulo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .info-section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .totales {
+            float: right;
+            width: 300px;
+        }
+        .total-row {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="factura-titulo">FACTURA ELECTRÓNICA</div>
+        <div>F001-00000007</div>
+    </div>
+
+    <div class="info-section">
+        <h3>DATOS DEL EMISOR</h3>
+        <p>Razón Social: No especificado</p>
+        <p>RUC: 12345678</p>
+        <p>Dirección: No especificado</p>
+    </div>
+
+    <div class="info-section">
+        <h3>DATOS DEL CLIENTE</h3>
+        <p>Razón Social: Sietamas SAC</p>
+        <p>RUC: 10758785857</p>
+        <p>Dirección: JR.nada</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>ITEM</th>
+            <th>DESCRIPCIÓN</th>
+            <th>CANT.</th>
+            <th>P.UNIT</th>
+            <th>TOTAL</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ricocat</td>
+            <td>3</td>
+            <td>S/ 10.00</td>
+            <td>S/ 30.00</td>
+        </tr>
+    </table>
+
+    <div class="totales">
+        <div class="total-row">
+            <strong>Op. Gravadas:</strong> S/ 25.41
+        </div>
+        <div class="total-row">
+            <strong>Op. Exoneradas:</strong> S/ 0.00
+        </div>
+        <div class="total-row">
+            <strong>Op. Inafectas:</strong> S/ 0.00
+        </div>
+        <div class="total-row">
+            <strong>IGV:</strong> S/ 4.59
+        </div>
+        <div class="total-row">
+            <strong>Total:</strong> S/ 30.00
+        </div>
+    </div>
+
+    <div style="clear: both; margin-top: 30px;">
+        <strong>Son:</strong> TREINTA  CON 00/100 SOLES
+    </div>
+</body>
+</html>
